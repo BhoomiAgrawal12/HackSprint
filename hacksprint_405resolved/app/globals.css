@@ -13,12 +13,24 @@
     --foreground: #ededed;
   }
 }
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('https://img.freepik.com/free-vector/blurred-security-background_23-2147628437.jpg?size=626&ext=jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
+
+/* Create a black overlay with opacity */
+
+
+
+
+
 
 @layer utilities {
   .text-balance {
@@ -33,14 +45,13 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f0f0f0;
 }
 
 /* Styling for the time, date, and day */
 #time, #date, #day {
   font-size: 2rem;
   font-weight: bold;
-  margin: 10px 0;
+  margin: 10px 50px;
   color: black; /* Ensures text appears in black */
 }
 
@@ -82,4 +93,57 @@ input[type="number"], input[type="time"] {
 label {
   font-size: 1rem;
   color: black; /* Label text in black */
+}
+.clock-container {
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  min-height: 100vh;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.morning {
+  background-image: url('/path-to-your-morning-image.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.afternoon {
+  background-image: url('https://www.pexels.com/photo/orange-cloud-at-sunset-12461776/');
+  background-size: cover;
+  background-position: center;
+}
+
+.night {
+  background-image: url('https://www.pexels.com/photo/starry-sky-998641/');
+  background-size: cover;
+  background-position: center;
+}
+
+#time, #date, #day {
+  font-size: 3rem;
+  color:#0a0a0a;
+}
+
+input {
+  color: #0a0a0a;
+  margin: 0.5rem auto;
+}
+label {
+  color: white;
+}
+
+button {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
 }
